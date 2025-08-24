@@ -472,14 +472,61 @@
         
         /* Responsive Design */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 2rem;
+                padding: 1rem;
             }
             
             .hero-text h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .hero-description {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 280px;
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            
+            .phone-mockup {
+                max-width: 280px;
+            }
+            
+            .whatsapp-chat {
+                border-radius: 20px;
+            }
+            
+            .chat-messages {
+                min-height: 250px;
+                padding: 0.8rem;
+            }
+            
+            .message {
+                max-width: 90%;
+                font-size: 0.8rem;
+                padding: 0.6rem 0.8rem;
+                border-radius: 15px;
             }
             
             .benefits-content {
@@ -487,14 +534,180 @@
                 gap: 2rem;
             }
             
-            .hero-buttons,
-            .cta-buttons {
-                justify-content: center;
+            .features-section h2,
+            .pricing-section h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
             }
             
             .features-grid,
             .pricing-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .feature-card {
+                padding: 1.5rem;
+            }
+            
+            .pricing-card {
+                padding: 1.5rem;
+                margin: 0 1rem;
+            }
+            
+            .plan-price .amount {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .cta-button.large {
+                width: 100%;
+                max-width: 300px;
+                padding: 1rem;
+                font-size: 1rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                text-align: left;
+            }
+            
+            /* PulsingBorder Section Mobile */
+            .benefits-section {
+                min-height: 500px;
+            }
+            
+            .benefits-content-tablet {
+                padding: 3rem 1.5rem !important;
+                min-height: 500px !important;
+                transform: translateY(-60px) !important;
+            }
+            
+            .benefits-title-tablet {
+                font-size: 2.5rem !important;
+                margin-bottom: 2.5rem !important;
+            }
+            
+            .benefits-grid-tablet {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-description {
+                font-size: 0.95rem;
+            }
+            
+            .phone-mockup {
+                max-width: 250px;
+            }
+            
+            .message {
+                font-size: 0.75rem;
+                padding: 0.5rem 0.7rem;
+            }
+            
+            .features-section h2,
+            .pricing-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            .feature-card,
+            .pricing-card {
+                padding: 1.2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            /* PulsingBorder Section Mobile */
+            .benefits-section {
+                min-height: 500px;
+                overflow: hidden;
+            }
+            
+            .benefits-content-tablet {
+                padding: 2rem 1rem !important;
+                min-height: auto !important;
+                transform: translateY(-20px) !important;
+                max-width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            
+            .benefits-title-tablet {
+                font-size: 1.8rem !important;
+                margin-bottom: 1.5rem !important;
+                line-height: 1.2;
+                text-align: center !important;
+            }
+            
+            .benefits-grid-tablet {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+                width: 100% !important;
+                max-width: 350px !important;
+                margin: 0 auto !important;
+            }
+            
+            .benefit-item-tablet {
+                padding: 1rem !important;
+                background: rgba(0, 0, 0, 0.3) !important;
+                border-radius: 8px !important;
+                backdrop-filter: blur(5px) !important;
+            }
+            
+            .benefit-item-tablet h3 {
+                font-size: 1rem !important;
+                margin-bottom: 0.5rem !important;
+                color: white !important;
+            }
+            
+            .benefit-item-tablet p {
+                font-size: 0.85rem !important;
+                line-height: 1.4 !important;
+                color: rgba(255, 255, 255, 0.9) !important;
+            }
+            
+            /* PulsingBorder Section Small Mobile */
+            .benefits-section {
+                min-height: 450px;
+            }
+            
+            .benefits-content-mobile {
+                padding: 2rem 1rem !important;
+                min-height: 450px !important;
+                transform: translateY(-40px) !important;
+            }
+            
+            .benefits-title-mobile {
+                font-size: 2rem !important;
+                margin-bottom: 2rem !important;
+            }
+            
+            .benefits-grid-mobile {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+                max-width: 100% !important;
             }
         }
     </style>
