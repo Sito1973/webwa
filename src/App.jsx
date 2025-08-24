@@ -171,11 +171,11 @@ function App() {
               <Bot className="inline-block mr-3" size={48} strokeWidth={2} />
               Agente IA para <span style={{color: 'var(--malachite)'}}>WhatsApp</span>
             </motion.h1>
-            <motion.p className="hero-subtitle" variants={textVariants}>
+            <motion.p className="hero-subtitle" variants={textVariants} style={{ color: '#ab8c69' }}>
               Automatiza la atención al cliente de tu empresa con inteligencia artificial avanzada
             </motion.p>
             <motion.p className="hero-description" variants={textVariants}>
-              Conecta directamente con tus clientes a través de <span style={{color: 'var(--malachite)'}}>WhatsApp Business</span> con respuestas instantáneas, 
+              Conecta directamente con tus clientes a través de <span style={{color: 'var(--malachite)'}}>WhatsApp Cloud</span> con respuestas instantáneas, 
               inteligentes y personalizadas las 24 horas del día.
             </motion.p>
             
